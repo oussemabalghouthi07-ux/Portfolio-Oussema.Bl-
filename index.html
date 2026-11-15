@@ -1,0 +1,489 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<meta name="claude:viewport-fit-sides" content="cover">
+<!-- ===== RÉFÉRENCEMENT (SEO) ===== -->
+  <title>Oussema Balghouthi</title>
+  <meta name="description" content="Portfolio d'Oussema Balghouthi, étudiant en première année de Sciences Informatiques à la Faculté des Sciences de Monastir (FSM), Tunisie. Développement web, Python, C, Linux, cybersécurité.">
+  <meta name="keywords" content="Oussema Balghouthi, portfolio, étudiant informatique, Sciences Informatiques, FSM Monastir, développeur web, HTML, CSS, PHP, Python, C, Linux, cybersécurité, Tunisie">
+  <meta name="author" content="Oussema Balghouthi">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#6741D9">
+
+  <!-- Partage sur les réseaux sociaux (Open Graph et Twitter) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Oussema Balghouthi">
+  <meta property="og:title" content="Oussema Balghouthi | Étudiant en Sciences Informatiques">
+  <meta property="og:description" content="Développement web, Python, C, Linux, cybersécurité. Découvrez mes projets, mes skills et mes certifications.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Oussema Balghouthi | Étudiant en Sciences Informatiques">
+  <meta name="twitter:description" content="Développement web, Python, C, Linux, cybersécurité.">
+  <!-- À ACTIVER après la mise en ligne : retirez les symboles de commentaire et remplacez
+       VOTRE-DOMAINE par l'adresse réelle du site (les réseaux sociaux exigent une adresse complète).
+  <meta property="og:url" content="https://VOTRE-DOMAINE/">
+  <meta property="og:image" content="https://VOTRE-DOMAINE/assets/images/og-cover.jpg">
+  <meta name="twitter:image" content="https://VOTRE-DOMAINE/assets/images/og-cover.jpg">
+  <link rel="canonical" href="https://VOTRE-DOMAINE/">
+  -->
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <!-- Données structurées : aident Google à comprendre qui vous êtes (informations issues du CV) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Oussema Balghouthi",
+    "jobTitle": "Étudiant en Sciences Informatiques",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Faculté des Sciences de Monastir" },
+    "address": { "@type": "PostalAddress", "addressCountry": "TN" },
+    "email": "mailto:oussemabalghouthi07@gmail.com",
+    "knowsAbout": ["Développement web", "Python", "C", "Linux", "HTML", "CSS"],
+    "url": "https://oussemabalghouthi.github.io/Portfolio-Oussema.Bl-/", "sameAs": ["https://github.com/OussemaBl-"]
+  }
+  </script>
+
+  <!-- Polices et styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+<!-- ===== ÉCRAN D'ACCUEIL (bouton "Get in") ===== -->
+<div class="welcome" id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+  <div class="welcome-inner">
+    <p class="welcome-kicker">Portfolio</p>
+    <h2 id="welcome-title">Bienvenue</h2>
+    <p class="welcome-sub">Je suis Oussema Balghouthi, étudiant en Sciences Informatiques. Découvrez mon parcours, mes projets et mes compétences.</p>
+    <button class="btn btn-primary welcome-btn" id="welcome-enter" type="button">Get in <span aria-hidden="true">→</span></button>
+    <p class="welcome-hint">Un fond sonore discret démarre à l'entrée (vous pouvez le couper avec le bouton son).</p>
+  </div>
+</div>
+
+
+<!-- ===== EN-TÊTE ===== -->
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#accueil" aria-label="Oussema Balghouthi, retour à l'accueil"><span class="brand-mark" aria-hidden="true">OB</span><span class="brand-name">Oussema Balghouthi</span></a>
+    <nav class="nav" id="site-nav" aria-label="Navigation principale">
+      <span class="nav-pill" aria-hidden="true"></span>
+      <a href="#apropos">À propos</a>
+      <a href="#skills">Skills</a>
+      <a href="#projets">Projets</a>
+      <a href="#formation">Formation</a>
+      <a href="#certifications">Certifications</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+    <button type="button" class="sound" id="sound-toggle" aria-pressed="false" aria-label="Activer le son" title="Son">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M11 5 6 9H3v6h3l5 4z"></path>
+        <path class="waves" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"></path>
+        <path class="x" d="M16 9l5 6M21 9l-5 6"></path>
+      </svg>
+    </button>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Basculer entre le thème clair et le thème sombre" title="Thème clair / sombre">
+      <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+    </button>
+    <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main id="accueil">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="status rise" style="--i:0"><i aria-hidden="true"></i>Ouvert aux opportunités</p>
+        <h1 class="rise" style="--i:1">Oussema Balghouthi</h1>
+        <p class="role rise" style="--i:2">Étudiant en informatique · <span class="typed" id="typed">Développement web</span><span class="caret" aria-hidden="true"></span></p>
+        <p class="pitch rise" style="--i:3">Je crée des sites web, j'apprends Python, C et Linux, et je m'intéresse au <mark class="hl" style="--hd:1.5s">Big Data</mark> et à la <mark class="hl" style="--hd:2s">cybersécurité</mark>.</p>
+        <div class="actions rise" style="--i:4">
+          <!-- Le fichier PDF se place dans assets/cv/ (voir README.md) -->
+          <a class="btn btn-primary" href="assets/cv/Oussema-Balghouthi-CV.pdf" data-cv target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/></svg>
+            Download My CV
+          </a>
+          <a class="btn" href="#contact">Me contacter</a>
+          <a class="btn" href="https://www.linkedin.com/in/VOTRE-PROFIL" data-todo="remplacer par votre vrai lien LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a class="btn" href="https://github.com/OussemaBl-" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="stage pop" id="stage">
+        <div class="card3d" id="card3d">
+          <div class="plate"></div>
+          <img class="cutout" src="assets/images/oussema-cutout.webp" alt="Portrait d'Oussema Balghouthi" width="1100" height="1218" fetchpriority="high">
+          <span class="tag tag-a"><span class="w">python</span></span>
+          <span class="tag tag-b"><span class="w">linux</span></span>
+          <span class="tag tag-c"><span class="w">&lt;/&gt;</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== À PROPOS ===== -->
+  <section class="section about" id="apropos">
+    <div class="wrap">
+      <h2 class="reveal">À propos</h2>
+      <div class="section-body">
+        <p class="reveal" style="--d:80ms">Étudiant en première année de <mark class="hl-s" style="--hd:0.7s">Sciences Informatiques</mark> à la Faculté des Sciences de Monastir (FSM), je suis passionné par les technologies et la <mark class="hl-s" style="--hd:1.1s">création de solutions numériques</mark>. J'aime apprendre, relever de nouveaux défis et <mark class="hl-s" style="--hd:1.5s">travailler en équipe</mark>.</p>
+        <p class="langline reveal" style="--d:240ms"><span class="mono-label">Langues</span>Arabe (langue maternelle), français et anglais (niveau intermédiaire).</p>
+        <ul class="stats" aria-label="En quelques chiffres" data-stagger>
+          <li class="reveal"><strong>1<sup>re</sup></strong><span>année en Sciences Informatiques</span></li>
+          <li class="reveal"><strong>1</strong><span>certification : Linux Unhatched</span></li>
+          <li class="reveal"><strong>3</strong><span>langues : arabe, français, anglais</span></li>
+          <li class="reveal"><strong>5</strong><span>langages : Python, C, HTML, CSS, PHP</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS =====
+       Pour changer un niveau, modifiez data-level (de 0 à 100) : la barre et le pourcentage suivent. -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <h2 class="reveal">Skills</h2>
+      <div class="section-body">
+        <div class="skill-grid" data-stagger>
+          <article class="skill-card cat-lang tilt reveal" data-level="60">
+            <div class="sk-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-4 4 4 4"/><path d="m16 8 4 4-4 4"/><path d="m13.5 6-3 12"/></svg>
+              <span class="pct"></span>
+            </div>
+            <h3>Python</h3>
+            <p class="sk-cat">Langage</p>
+            <div class="bar" aria-hidden="true"><i></i></div>
+          </article>
+          <article class="skill-card cat-lang tilt reveal" data-level="55">
+            <div class="sk-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+              <span class="pct"></span>
+            </div>
+            <h3>C</h3>
+            <p class="sk-cat">Langage</p>
+            <div class="bar" aria-hidden="true"><i></i></div>
+          </article>
+          <article class="skill-card cat-web tilt reveal" data-level="75">
+            <div class="sk-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg>
+              <span class="pct"></span>
+            </div>
+            <h3>HTML</h3>
+            <p class="sk-cat">Web</p>
+            <div class="bar" aria-hidden="true"><i></i></div>
+          </article>
+          <article class="skill-card cat-web tilt reveal" data-level="70">
+            <div class="sk-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.8-.9 1.5-1.9-.3-1 .4-2.1 1.5-2.1H17a4 4 0 0 0 4-4 9 9 0 0 0-9-10z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10.5" cy="7" r="1"/><circle cx="15.5" cy="7.5" r="1"/></svg>
+              <span class="pct"></span>
+            </div>
+            <h3>CSS</h3>
+            <p class="sk-cat">Web</p>
+            <div class="bar" aria-hidden="true"><i></i></div>
+          </article>
+          <article class="skill-card cat-web tilt reveal" data-level="35">
+            <div class="sk-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4c-2 0-3 1-3 3v2c0 1-.7 2-2 3 1.3 1 2 2 2 3v2c0 2 1 3 3 3"/><path d="M16 4c2 0 3 1 3 3v2c0 1 .7 2 2 3-1.3 1-2 2-2 3v2c0 2-1 3-3 3"/></svg>
+              <span class="pct"></span>
+            </div>
+            <h3>PHP</h3>
+            <p class="sk-cat">Web · notions</p>
+            <div class="bar" aria-hidden="true"><i></i></div>
+          </article>
+          <article class="skill-card cat-sys tilt reveal" data-level="60">
+            <div class="sk-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="16" rx="2.5"/><path d="m6.5 9 3 3-3 3"/><path d="M12.5 15h5"/></svg>
+              <span class="pct"></span>
+            </div>
+            <h3>Linux</h3>
+            <p class="sk-cat">Système</p>
+            <div class="bar" aria-hidden="true"><i></i></div>
+          </article>
+          <article class="skill-card cat-logic tilt reveal" data-level="55">
+            <div class="sk-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="8" r="2.5"/><path d="M6 8.5v7"/><path d="M18 10.5c0 4-6 3-10 6"/></svg>
+              <span class="pct"></span>
+            </div>
+            <h3>Algorithmique</h3>
+            <p class="sk-cat">Logique · bases</p>
+            <div class="bar" aria-hidden="true"><i></i></div>
+          </article>
+          <article class="skill-card cat-logic tilt reveal" data-level="60">
+            <div class="sk-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg>
+              <span class="pct"></span>
+            </div>
+            <h3>Résolution de problèmes</h3>
+            <p class="sk-cat">Logique</p>
+            <div class="bar" aria-hidden="true"><i></i></div>
+          </article>
+          <article class="skill-card cat-tool tilt reveal" data-level="75">
+            <div class="sk-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="m8 13-2 2 2 2"/><path d="m16 13 2 2-2 2"/></svg>
+              <span class="pct"></span>
+            </div>
+            <h3>Visual Studio Code</h3>
+            <p class="sk-cat">Outil</p>
+            <div class="bar" aria-hidden="true"><i></i></div>
+          </article>
+          <article class="skill-card cat-tool tilt reveal" data-level="65">
+            <div class="sk-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg>
+              <span class="pct"></span>
+            </div>
+            <h3>XAMPP</h3>
+            <p class="sk-cat">Outil</p>
+            <div class="bar" aria-hidden="true"><i></i></div>
+          </article>
+          <article class="skill-card cat-sec tilt reveal" data-level="10">
+            <div class="sk-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.3 7.5 9.5 4.4-1.2 7.5-4.9 7.5-9.5V6z"/><path d="m9 12 2 2 4-4"/></svg>
+              <span class="pct"></span>
+            </div>
+            <h3>Cybersécurité</h3>
+            <p class="sk-cat">Sécurité · débutant</p>
+            <div class="bar" aria-hidden="true"><i></i></div>
+          </article>
+          <article class="skill-card cat-design tilt reveal" data-level="70">
+            <div class="sk-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M9 9v11"/></svg>
+              <span class="pct"></span>
+            </div>
+            <h3>Création de sites web</h3>
+            <p class="sk-cat">Design</p>
+            <div class="bar" aria-hidden="true"><i></i></div>
+          </article>
+        </div>
+        <p class="sk-note reveal">Niveaux indicatifs, en progression.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJETS =====
+       Image : déposez la capture dans assets/images/projects/ avec le nom prévu dans src.
+       Liens Live Demo et Source Code : à renseigner dans js/main.js (SITE_CONFIG.projects).
+       Technologies : modifiez simplement les éléments <li> de chaque liste. -->
+  <section class="section" id="projets">
+    <div class="wrap">
+      <h2 class="reveal">Projets</h2>
+      <div class="section-body">
+        <div class="projects" data-stagger>
+
+          <article class="project tilt reveal" data-project="gym-powerfit">
+            <div class="shot">
+              <div class="shot-ph" aria-hidden="true">
+                <div class="ph-bar"><i></i><i></i><i></i><b></b></div>
+                <div class="ph-body"><span></span><span></span></div>
+                <span class="ph-label">Capture à ajouter</span>
+              </div>
+              <img src="assets/images/projects/gym-powerfit.webp" alt="Capture d'écran du site Gym PowerFit" width="1280" height="800" loading="lazy" decoding="async">
+            </div>
+            <div class="project-body">
+              <span class="mono-label">Développement web</span>
+              <h3>Gym PowerFit</h3>
+              <p>Site web pour la gestion d'une salle de sport.</p>
+              <ul class="tech" aria-label="Technologies utilisées"><li>Technologies web</li><li>Base de données</li></ul>
+              <div class="project-actions">
+                <a class="btn btn-sm btn-primary is-pending" data-config="projects.gym-powerfit.demo">Live Demo <span class="soon">bientôt</span></a>
+                <a class="btn btn-sm is-pending" data-config="projects.gym-powerfit.code">Source Code <span class="soon">bientôt</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project tilt reveal" data-project="smart-prix">
+            <div class="shot">
+              <div class="shot-ph" aria-hidden="true">
+                <div class="ph-bar"><i></i><i></i><i></i><b></b></div>
+                <div class="ph-body"><span></span><span></span></div>
+                <span class="ph-label">Capture à ajouter</span>
+              </div>
+              <img src="assets/images/projects/smart-prix.webp" alt="Aperçu du projet Smart Prix" width="1280" height="800" loading="lazy" decoding="async">
+            </div>
+            <div class="project-body">
+              <span class="mono-label">Entrepreneuriat</span>
+              <h3>Smart Prix</h3>
+              <p>Projet entrepreneurial : idée de projet numérique et étude de son modèle économique.</p>
+              <ul class="tech" aria-label="Domaines abordés"><li>Projet numérique</li><li>Modèle économique</li></ul>
+              <div class="project-actions">
+                <a class="btn btn-sm btn-primary is-pending" data-config="projects.smart-prix.demo">Live Demo <span class="soon">bientôt</span></a>
+                <a class="btn btn-sm is-pending" data-config="projects.smart-prix.code">Source Code <span class="soon">bientôt</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project tilt reveal" data-project="cybersecurite">
+            <div class="shot">
+              <div class="shot-ph" aria-hidden="true">
+                <div class="ph-bar"><i></i><i></i><i></i><b></b></div>
+                <div class="ph-body"><span></span><span></span></div>
+                <span class="ph-label">Capture à ajouter</span>
+              </div>
+              <img src="assets/images/projects/cybersecurite.webp" alt="Illustration cybersécurité" width="1280" height="800" loading="lazy" decoding="async">
+            </div>
+            <div class="project-body">
+              <span class="mono-label">Apprentissage</span>
+              <h3>Cybersécurité</h3>
+              <p>Un domaine qui m'intéresse et que je souhaite approfondir pendant mes études.</p>
+              <ul class="tech" aria-label="Domaines"><li>Cybersécurité</li><li>Linux</li></ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORMATION ===== -->
+  <section class="section" id="formation">
+    <div class="wrap">
+      <h2 class="reveal">Formation</h2>
+      <div class="section-body">
+        <ol class="tl reveal" aria-label="Parcours académique">
+          <li class="tl-item reveal reveal-left">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="badge">Établissement</span></div>
+              <h3>Faculté des Sciences de Monastir (FSM)</h3>
+              <p>Monastir, Tunisie</p>
+            </div>
+          </li>
+          <li class="tl-item reveal reveal-left" style="--d:160ms">
+            <span class="tl-dot live" aria-hidden="true"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="badge">En cours</span><span class="mono-label">Depuis 2026</span></div>
+              <h3>Première année, Sciences Informatiques</h3>
+              <p>Études supérieures en informatique.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS =====
+       Image : assets/images/certificates/linux-unhatched.webp
+       Lien du badge : js/main.js (SITE_CONFIG.certificate.badge) -->
+  <section class="section" id="certifications">
+    <div class="wrap">
+      <h2 class="reveal">Certifications</h2>
+      <div class="section-body">
+        <article class="cert-card reveal reveal-zoom">
+          <button type="button" class="cert-shot" id="cert-open" data-open-cert aria-label="Agrandir le certificat Linux Unhatched">
+            <img src="assets/images/certificates/linux-unhatched.webp" alt="Certificat Linux Unhatched décerné à Oussema Balghouthi, Cisco Networking Academy" width="1099" height="707" loading="lazy" decoding="async">
+            <span class="cert-hint">Cliquer pour agrandir</span>
+          </button>
+          <div class="cert-info">
+            <span class="mono-label">Certification · 21 oct. 2026</span>
+            <h3>Linux Unhatched</h3>
+            <p>Cisco Networking Academy, proposé par la Faculté des Sciences de Monastir. Fondamentaux de Linux et ligne de commande.</p>
+            <div class="actions">
+              <button type="button" class="btn btn-sm btn-primary" data-open-cert>Voir le certificat</button>
+              <a class="btn btn-sm" href="https://www.netacad.com/recognitions/verify/32c19e84-0855-4ebe-bff4-7997676c1326" target="_blank" rel="noopener noreferrer">Vérifier en ligne ↗</a>
+              <a class="btn btn-sm is-pending" data-config="certificate.badge">Voir le badge <span class="soon">bientôt</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <h2 class="reveal">Contact</h2>
+      <div class="section-body">
+        <div class="cta-band reveal">
+          <h3>Travaillons ensemble</h3>
+          <a class="btn btn-primary" href="#cf-name" data-focus-form>Écrivez-moi <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="contact-grid">
+
+          <div class="contact-card" data-stagger>
+            <h3 class="reveal">Coordonnées</h3>
+            <p class="contact-intro reveal">Vous recrutez ou vous avez un projet à me proposer ? Écrivez-moi.</p>
+            <div class="contact-row reveal">
+              <span class="mono-label">E-mail</span>
+              <div class="row-main">
+                <span class="value" id="email-text">oussemabalghouthi07@gmail.com</span>
+                <button class="btn btn-sm" type="button" id="copy-email">Copier</button>
+              </div>
+            </div>
+            <p class="copy-status" id="copy-status" aria-live="polite"></p>
+            <div class="contact-row reveal">
+              <span class="mono-label">WhatsApp</span>
+              <div class="row-main">
+                <span class="value">+216 51 588 952</span>
+                <a class="btn btn-sm btn-wa" href="https://wa.me/21651588952" target="_blank" rel="noopener noreferrer">Écrire sur WhatsApp ↗</a>
+              </div>
+            </div>
+            <div class="actions reveal">
+              <a class="btn btn-sm" href="https://www.linkedin.com/in/VOTRE-PROFIL" data-todo="remplacer par votre vrai lien LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+              <a class="btn btn-sm" href="https://github.com/OussemaBl-" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a class="btn btn-sm btn-primary" href="assets/cv/Oussema-Balghouthi-CV.pdf" data-cv target="_blank" rel="noopener">Download My CV</a>
+            </div>
+          </div>
+
+          <form class="contact-card contact-form" id="contact-form" novalidate>
+            <h3>Envoyer un message</h3>
+            <div class="field">
+              <label for="cf-name">Nom</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="80" required aria-describedby="cf-name-err">
+              <p class="err" id="cf-name-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="cf-email">E-mail</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="120" required aria-describedby="cf-email-err">
+              <p class="err" id="cf-email-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="cf-subject">Sujet</label>
+              <input id="cf-subject" name="subject" type="text" maxlength="120" required aria-describedby="cf-subject-err">
+              <p class="err" id="cf-subject-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" maxlength="2000" required aria-describedby="cf-message-err"></textarea>
+              <p class="err" id="cf-message-err" aria-live="polite"></p>
+            </div>
+            <button class="btn btn-primary" type="submit" id="form-submit">Préparer mon e-mail</button>
+            <p class="form-note" id="form-note"></p>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== PIED DE PAGE ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Oussema Balghouthi · Tunisie</span>
+    <nav class="foot-links" aria-label="Liens utiles">
+      <a href="https://github.com/OussemaBl-" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a href="assets/cv/Oussema-Balghouthi-CV.pdf" data-cv>CV (PDF)</a>
+      <a href="mailto:oussemabalghouthi07@gmail.com">E-mail</a>
+      <a href="#accueil">Haut de page ↑</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- ===== AGRANDISSEMENT DU CERTIFICAT ===== -->
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Certificat Linux Unhatched">
+  <div class="lb-inner">
+    <img id="lb-img" alt="">
+    <div class="lb-actions">
+      <a class="btn btn-primary" href="https://www.netacad.com/recognitions/verify/32c19e84-0855-4ebe-bff4-7997676c1326" target="_blank" rel="noopener noreferrer">Vérifier le certificat ↗</a>
+      <button type="button" class="btn" id="lb-close">Fermer</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body></html>
